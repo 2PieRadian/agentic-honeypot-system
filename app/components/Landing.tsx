@@ -1,11 +1,16 @@
 "use client";
 
+import { useState } from "react";
+
 export default function Landing() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     targetId: string,
   ) => {
     e.preventDefault();
+    setIsMenuOpen(false);
     const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -20,7 +25,9 @@ export default function Landing() {
           <div className="font-serif text-2xl tracking-tight text-gray-900">
             IntelHive
           </div>
-          <div className="flex gap-8 text-sm text-gray-600">
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex gap-8 text-sm text-gray-600">
             <a
               href="#approach"
               onClick={(e) => handleNavClick(e, "approach")}
@@ -57,6 +64,74 @@ export default function Landing() {
               Ethics
             </a>
           </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
+            aria-label="Toggle menu"
+          >
+            <span
+              className={`block w-6 h-0.5 bg-gray-900 transition-all duration-300 ease-out ${
+                isMenuOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+            />
+            <span
+              className={`block w-6 h-0.5 bg-gray-900 transition-all duration-300 ease-out ${
+                isMenuOpen ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`block w-6 h-0.5 bg-gray-900 transition-all duration-300 ease-out ${
+                isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            />
+          </button>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="px-6 py-4 border-t border-gray-200 bg-[#fffaff] flex flex-col gap-4">
+            <a
+              href="#approach"
+              onClick={(e) => handleNavClick(e, "approach")}
+              className="text-gray-600 hover:text-gray-900 transition-colors py-2"
+            >
+              Approach
+            </a>
+            <a
+              href="#system"
+              onClick={(e) => handleNavClick(e, "system")}
+              className="text-gray-600 hover:text-gray-900 transition-colors py-2"
+            >
+              System
+            </a>
+            <a
+              href="#architecture"
+              onClick={(e) => handleNavClick(e, "architecture")}
+              className="text-gray-600 hover:text-gray-900 transition-colors py-2"
+            >
+              Architecture
+            </a>
+            <a
+              href="#api"
+              onClick={(e) => handleNavClick(e, "api")}
+              className="text-gray-600 hover:text-gray-900 transition-colors py-2"
+            >
+              API
+            </a>
+            <a
+              href="#ethics"
+              onClick={(e) => handleNavClick(e, "ethics")}
+              className="text-gray-600 hover:text-gray-900 transition-colors py-2"
+            >
+              Ethics
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -76,7 +151,7 @@ export default function Landing() {
             ever revealing detection.
           </p>
           <button className="bg-[#d8315b] text-white px-8 py-3 text-sm tracking-wide uppercase hover:bg-[#b8285a] transition-colors">
-            View Documentation
+            View Source Code
           </button>
         </div>
       </section>

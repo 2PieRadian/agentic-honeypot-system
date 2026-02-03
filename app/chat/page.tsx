@@ -198,7 +198,7 @@ export default function ChatPage() {
                         ? "bg-[#d8315b] text-[#fffff2]"
                         : isDarkMode
                           ? "bg-[#30302b] text-[#e8e8cf]"
-                          : "bg-[#eaead4] text-[#10100e]"
+                          : "bg-[#f7f7e8] text-[#10100e]"
                     }`}
                   >
                     <p className="text-sm leading-relaxed whitespace-pre-wrap">
@@ -223,19 +223,19 @@ export default function ChatPage() {
               {isLoading && (
                 <div className="flex justify-start">
                   <div
-                    className={`rounded-lg px-4 py-3 ${isDarkMode ? "bg-[#30302b]" : "bg-[#eaead4]"}`}
+                    className={`rounded-lg px-4 py-3 ${isDarkMode ? "bg-[#30302b]" : "bg-[#f7f7e8]"}`}
                   >
                     <div className="flex gap-1">
                       <span
-                        className={`w-2 h-2 rounded-full animate-bounce ${isDarkMode ? "bg-[#c0c0ab]" : "bg-[#606055]"}`}
+                        className={`w-2 h-2 rounded-full animate-bounce ${isDarkMode ? "bg-[#c0c0ab]" : "bg-[#191815]"}`}
                         style={{ animationDelay: "0ms" }}
                       />
                       <span
-                        className={`w-2 h-2 rounded-full animate-bounce ${isDarkMode ? "bg-[#c0c0ab]" : "bg-[#606055]"}`}
+                        className={`w-2 h-2 rounded-full animate-bounce ${isDarkMode ? "bg-[#c0c0ab]" : "bg-[#191815]"}`}
                         style={{ animationDelay: "150ms" }}
                       />
                       <span
-                        className={`w-2 h-2 rounded-full animate-bounce ${isDarkMode ? "bg-[#c0c0ab]" : "bg-[#606055]"}`}
+                        className={`w-2 h-2 rounded-full animate-bounce ${isDarkMode ? "bg-[#c0c0ab]" : "bg-[#191815]"}`}
                         style={{ animationDelay: "300ms" }}
                       />
                     </div>

@@ -24,7 +24,7 @@ export default function Landing() {
   const handleDarkModeToggle = () => {
     setIsAnimating(true);
     setIsDarkMode(!isDarkMode);
-    setTimeout(() => setIsAnimating(false), 500);
+    setTimeout(() => setIsAnimating(false), 400);
   };
 
   const handleNavClick = (
@@ -118,7 +118,7 @@ export default function Landing() {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className={`h-5 w-5 transition-transform duration-500 ${isAnimating ? "rotate-[360deg]" : ""}`}
+                  className={`h-5 w-5 transition-transform duration-500 ${isAnimating ? "rotate-[180deg]" : ""}`}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >

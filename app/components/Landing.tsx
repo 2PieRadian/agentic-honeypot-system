@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Landing() {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -221,8 +223,11 @@ export default function Landing() {
             engaging fraudsters in natural conversations, the system extracts
             behavioral intelligence without ever revealing detection.
           </p>
-          <button className="bg-[#d8315b] text-[#fffff2] px-8 py-3 text-sm tracking-wide uppercase hover:bg-[#b8285a] transition-colors">
-            View Source Code
+          <button
+            onClick={() => router.push("/chat")}
+            className="bg-[#d8315b] text-[#fffff2] px-8 py-3 text-sm tracking-wide uppercase hover:bg-[#b8285a] transition-colors cursor-pointer"
+          >
+            Start Chat
           </button>
         </div>
       </section>

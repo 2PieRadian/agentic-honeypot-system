@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 export default function Landing() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     // Check for saved preference or system preference
@@ -19,6 +20,12 @@ export default function Landing() {
   useEffect(() => {
     localStorage.setItem("darkMode", isDarkMode.toString());
   }, [isDarkMode]);
+
+  const handleDarkModeToggle = () => {
+    setIsAnimating(true);
+    setIsDarkMode(!isDarkMode);
+    setTimeout(() => setIsAnimating(false), 500);
+  };
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -91,14 +98,14 @@ export default function Landing() {
           <div className="flex items-center gap-4">
             {/* Dark Mode Toggle */}
             <button
-              onClick={() => setIsDarkMode(!isDarkMode)}
-              className={`p-2 rounded-full transition-colors ${isDarkMode ? "bg-[#30302b] text-[#e8e8cf] hover:bg-[#606055]" : "text-[#10100e] hover:bg-[#c0c0ab]"}`}
+              onClick={handleDarkModeToggle}
+              className={`p-2 rounded-full cursor-pointer transition-colors ${isDarkMode ? "bg-[#d8315b] text-[#fffff2]" : "text-[#10100e] hover:bg-[#eaead4]"}`}
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className={`h-5 w-5 ${isAnimating ? "animate-spin" : ""}`}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -111,7 +118,7 @@ export default function Landing() {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className={`h-5 w-5 transition-transform duration-500 ${isAnimating ? "rotate-[360deg]" : ""}`}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >

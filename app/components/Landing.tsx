@@ -44,7 +44,7 @@ export default function Landing() {
           <div
             className={`font-serif text-2xl tracking-tight ${isDarkMode ? "text-[#e8e8cf]" : "text-[#10100e]"}`}
           >
-            IntelHive
+            Intel<span className="text-[#d8315b]">Hive</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -199,7 +199,7 @@ export default function Landing() {
           <h1
             className={`font-serif text-7xl tracking-tight mb-6 ${isDarkMode ? "text-[#e8e8cf]" : "text-[#10100e]"}`}
           >
-            IntelHive
+            Intel<span className="text-[#d8315b]">Hive</span>
           </h1>
           <p
             className={`text-2xl mb-8 font-light tracking-wide ${isDarkMode ? "text-[#c0c0ab]" : "text-[#606055]"}`}
@@ -209,10 +209,10 @@ export default function Landing() {
           <p
             className={`text-lg mb-12 leading-relaxed max-w-3xl ${isDarkMode ? "text-[#c0c0ab]" : "text-[#30302b]"}`}
           >
-            IntelHive is an agentic AI honeypot that doesn't block scammers—it
-            talks to them. By quietly engaging fraudsters in natural
-            conversations, the system extracts behavioral intelligence without
-            ever revealing detection.
+            Intel<span className="text-[#d8315b]">Hive</span> is an agentic AI
+            honeypot that doesn't block scammers—it talks to them. By quietly
+            engaging fraudsters in natural conversations, the system extracts
+            behavioral intelligence without ever revealing detection.
           </p>
           <button className="bg-[#d8315b] text-[#FFFFE3] px-8 py-3 text-sm tracking-wide uppercase hover:bg-[#b8285a] transition-colors">
             View Source Code
@@ -277,9 +277,10 @@ export default function Landing() {
               className={`space-y-6 leading-relaxed mb-12 ${isDarkMode ? "text-[#c0c0ab]" : "text-[#30302b]"}`}
             >
               <p>
-                IntelHive does not classify and block. It observes and engages.
-                When a suspicious message arrives, the system doesn't reject
-                it—it starts a conversation.
+                Intel<span className="text-[#d8315b]">Hive</span> does not
+                classify and block. It observes and engages. When a suspicious
+                message arrives, the system doesn't reject it—it starts a
+                conversation.
               </p>
               <p>
                 An AI agent responds naturally, matching the tone and pace of
@@ -290,7 +291,8 @@ export default function Landing() {
               </p>
               <p>
                 This is engagement before judgment. Instead of making snap
-                decisions based on limited data, IntelHive gathers evidence
+                decisions based on limited data, Intel
+                <span className="text-[#d8315b]">Hive</span> gathers evidence
                 across multiple message exchanges. It watches for behavioral
                 patterns. It extracts payment identifiers, links, contact
                 details. It builds a complete intelligence profile.
@@ -489,10 +491,10 @@ export default function Landing() {
           <p
             className={`mb-16 max-w-3xl leading-relaxed ${isDarkMode ? "text-[#c0c0ab]" : "text-[#606055]"}`}
           >
-            IntelHive is built as a modular system. Each layer handles a
-            specific responsibility and communicates through well-defined
-            interfaces. This separation allows independent scaling and
-            replacement of components.
+            Intel<span className="text-[#d8315b]">Hive</span> is built as a
+            modular system. Each layer handles a specific responsibility and
+            communicates through well-defined interfaces. This separation allows
+            independent scaling and replacement of components.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -553,10 +555,11 @@ export default function Landing() {
           <p
             className={`mb-16 max-w-3xl leading-relaxed ${isDarkMode ? "text-[#c0c0ab]" : "text-[#606055]"}`}
           >
-            IntelHive is controlled entirely through a REST API. Every
-            conversation is managed as an independent session with its own
-            lifecycle. Inputs and outputs are structured JSON, making
-            integration with existing security infrastructure straightforward.
+            Intel<span className="text-[#d8315b]">Hive</span> is controlled
+            entirely through a REST API. Every conversation is managed as an
+            independent session with its own lifecycle. Inputs and outputs are
+            structured JSON, making integration with existing security
+            infrastructure straightforward.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -701,10 +704,11 @@ export default function Landing() {
             className={`max-w-4xl space-y-8 leading-relaxed ${isDarkMode ? "text-[#c0c0ab]" : "text-[#30302b]"}`}
           >
             <p>
-              IntelHive is a defensive security system. It observes, it collects
-              intelligence, but it does not attack. The system operates under
-              strict ethical constraints designed to ensure responsible use of
-              conversational AI in security contexts.
+              Intel<span className="text-[#d8315b]">Hive</span> is a defensive
+              security system. It observes, it collects intelligence, but it
+              does not attack. The system operates under strict ethical
+              constraints designed to ensure responsible use of conversational
+              AI in security contexts.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
@@ -743,10 +747,11 @@ export default function Landing() {
               ))}
             </div>
             <p className="pt-6">
-              Organizations deploying IntelHive are responsible for ensuring
-              their use complies with applicable laws governing electronic
-              communication, data collection, and cybersecurity operations in
-              their jurisdiction.
+              Organizations deploying Intel
+              <span className="text-[#d8315b]">Hive</span> are responsible for
+              ensuring their use complies with applicable laws governing
+              electronic communication, data collection, and cybersecurity
+              operations in their jurisdiction.
             </p>
           </div>
         </div>
@@ -771,10 +776,11 @@ export default function Landing() {
               className={`text-lg leading-relaxed mb-12 ${isDarkMode ? "text-[#c0c0ab]" : "text-[#606055]"}`}
             >
               The best defense is not the fastest block—it's the deepest
-              understanding. IntelHive doesn't rush to judgment. It watches,
-              listens, and learns. By allowing scammers to reveal themselves
-              through conversation, the system builds intelligence that static
-              defenses can never capture. This is security through silence.
+              understanding. Intel<span className="text-[#d8315b]">Hive</span>{" "}
+              doesn't rush to judgment. It watches, listens, and learns. By
+              allowing scammers to reveal themselves through conversation, the
+              system builds intelligence that static defenses can never capture.
+              This is security through silence.
             </p>
             <div
               className={`border-t pt-12 ${isDarkMode ? "border-[#30302b]" : "border-[#c0c0ab]"}`}
@@ -799,7 +805,7 @@ export default function Landing() {
               <div
                 className={`font-serif text-xl mb-2 ${isDarkMode ? "text-[#e8e8cf]" : "text-[#10100e]"}`}
               >
-                IntelHive
+                Intel<span className="text-[#d8315b]">Hive</span>
               </div>
               <p
                 className={`text-sm ${isDarkMode ? "text-[#606055]" : "text-[#606055]"}`}
@@ -812,8 +818,9 @@ export default function Landing() {
             className={`mt-12 pt-8 border-t text-xs ${isDarkMode ? "border-[#30302b] text-[#606055]" : "border-[#c0c0ab] text-[#606055]"}`}
           >
             <p>
-              © 2026 IntelHive. All intelligence data is handled according to
-              applicable security and privacy standards.
+              © 2026 Intel<span className="text-[#d8315b]">Hive</span>. All
+              intelligence data is handled according to applicable security and
+              privacy standards.
             </p>
           </div>
         </div>

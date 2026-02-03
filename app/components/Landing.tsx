@@ -34,11 +34,11 @@ export default function Landing() {
 
   return (
     <div
-      className={`min-h-screen ${isDarkMode ? "bg-[#10100e] text-[#e8e8cf]" : "bg-[#FFFFE3] text-[#10100e]"}`}
+      className={`min-h-screen ${isDarkMode ? "bg-[#10100e] text-[#e8e8cf]" : "bg-[#fffff2] text-[#10100e]"}`}
     >
       {/* Navigation */}
       <nav
-        className={`border-b sticky top-0 z-50 backdrop-blur-sm bg-opacity-95 ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#FFFFE3]"}`}
+        className={`border-b sticky top-0 z-50 backdrop-blur-sm bg-opacity-95 ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#fffff2]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div
@@ -152,7 +152,7 @@ export default function Landing() {
           }`}
         >
           <div
-            className={`px-6 py-4 border-t flex flex-col gap-4 ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#FFFFE3]"}`}
+            className={`px-6 py-4 border-t flex flex-col gap-4 ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#fffff2]"}`}
           >
             <a
               href="#approach"
@@ -214,7 +214,7 @@ export default function Landing() {
             engaging fraudsters in natural conversations, the system extracts
             behavioral intelligence without ever revealing detection.
           </p>
-          <button className="bg-[#d8315b] text-[#FFFFE3] px-8 py-3 text-sm tracking-wide uppercase hover:bg-[#b8285a] transition-colors">
+          <button className="bg-[#d8315b] text-[#fffff2] px-8 py-3 text-sm tracking-wide uppercase hover:bg-[#b8285a] transition-colors">
             View Source Code
           </button>
         </div>
@@ -222,7 +222,7 @@ export default function Landing() {
 
       {/* The Problem */}
       <section
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f8f8dd]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f7f7e8]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-24">
           <div className="max-w-4xl">
@@ -264,7 +264,7 @@ export default function Landing() {
       {/* Our Approach */}
       <section
         id="approach"
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#FFFFE3]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#fffff2]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-24">
           <div className="max-w-4xl">
@@ -355,7 +355,7 @@ export default function Landing() {
       {/* How IntelHive Works */}
       <section
         id="system"
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f8f8dd]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f7f7e8]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-24">
           <h2
@@ -398,7 +398,7 @@ export default function Landing() {
             ].map((item) => (
               <div
                 key={item.step}
-                className={`border p-8 shadow-sm ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#FFFFE3]"}`}
+                className={`border p-8 shadow-sm ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#fffff2]"}`}
               >
                 <div
                   className={`text-xs uppercase tracking-widest mb-4 ${isDarkMode ? "text-[#606055]" : "text-[#606055]"}`}
@@ -423,7 +423,7 @@ export default function Landing() {
 
       {/* Core Capabilities */}
       <section
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#FFFFE3]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#fffff2]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-24">
           <h2
@@ -480,7 +480,7 @@ export default function Landing() {
       {/* Architecture Overview */}
       <section
         id="architecture"
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f8f8dd]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f7f7e8]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-24">
           <h2
@@ -525,7 +525,7 @@ export default function Landing() {
             ].map((item) => (
               <div
                 key={item.title}
-                className={`border p-8 shadow-sm ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#FFFFE3]"}`}
+                className={`border p-8 shadow-sm ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#fffff2]"}`}
               >
                 <h3 className="font-mono text-xs uppercase tracking-widest text-[#d8315b] mb-4">
                   {item.title}
@@ -544,7 +544,7 @@ export default function Landing() {
       {/* API-First System */}
       <section
         id="api"
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#FFFFE3]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#fffff2]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-24">
           <h2
@@ -692,7 +692,7 @@ export default function Landing() {
       {/* Ethics & Responsibility */}
       <section
         id="ethics"
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f8f8dd]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f7f7e8]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-24">
           <h2
@@ -759,7 +759,7 @@ export default function Landing() {
 
       {/* Closing Section */}
       <section
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#FFFFE3]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#10100e]" : "border-[#c0c0ab] bg-[#fffff2]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-32">
           <div className="max-w-4xl mx-auto text-center">
@@ -797,7 +797,7 @@ export default function Landing() {
 
       {/* Footer */}
       <footer
-        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f8f8dd]"}`}
+        className={`border-t ${isDarkMode ? "border-[#30302b] bg-[#191815]" : "border-[#c0c0ab] bg-[#f7f7e8]"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">

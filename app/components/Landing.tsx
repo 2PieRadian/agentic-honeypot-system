@@ -223,12 +223,26 @@ export default function Landing() {
             engaging fraudsters in natural conversations, the system extracts
             behavioral intelligence without ever revealing detection.
           </p>
-          <button
-            onClick={() => router.push("/chat")}
-            className="bg-[#d8315b] text-[#fffff2] px-8 py-3 text-sm tracking-wide uppercase hover:bg-[#b8285a] transition-colors cursor-pointer"
-          >
-            Start Chat
-          </button>
+          <div className="flex gap-4">
+            <button
+              onClick={() => router.push("/chat")}
+              className="bg-[#d8315b] text-[#fffff2] px-8 py-3 text-sm tracking-wide uppercase hover:bg-[#b8285a] transition-colors cursor-pointer"
+            >
+              Start Chat
+            </button>
+            <a
+              href="https://github.com/2PieRadian/intel-hive-backend"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-8 py-3 text-sm tracking-wide uppercase transition-colors cursor-pointer ${
+                isDarkMode
+                  ? "bg-[#e8e8cf] text-[#10100e] hover:bg-[#d0d0b8]"
+                  : "bg-[#10100e] text-[#fffff2] hover:bg-[#2a2a25]"
+              }`}
+            >
+              View Source Code
+            </a>
+          </div>
         </div>
       </section>
 
